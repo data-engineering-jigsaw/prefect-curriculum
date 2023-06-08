@@ -1,0 +1,46 @@
+###
+### A complete description of a Prefect Deployment for flow 'get-data'
+###
+name: get-restaurants
+description: null
+version: 1f5a2d8c7f74279cc07fbc62a533b808
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+work_pool_name: null
+tags: []
+parameters: {'url': 'HONDURAS MAYA CAFE & BAR LLC'}
+schedule:
+  interval: 60
+  timezone: America/Chicago 
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: get-data
+manifest_path: null
+storage: null
+path: /Users/jeffreykatz/Documents/jigsaw/curriculum/prefect/prefect-curriculum/2-prefect-deployments/code
+entrypoint: index.py:get_data
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    url:
+      title: url
+      position: 0
+  required:
+  - url
+  definitions: null
+timestamp: '2023-06-08T15:32:38.667984+00:00'
