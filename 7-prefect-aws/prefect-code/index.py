@@ -1,4 +1,5 @@
 import requests
+from prefect.server.schemas.schedules import IntervalSchedule
 from prefect import flow, task
 
 @task
@@ -12,6 +13,5 @@ def get_restaurants(url: str):
     receipts = find_receipts(url)
     return receipts
 
-name = 'HONDURAS MAYA CAFE & BAR LLC'
-print(get_restaurants(name))
+get_restaurants("HONDURAS MAYA CAFE & BAR LLC")
 

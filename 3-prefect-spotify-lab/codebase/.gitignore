@@ -1,3 +1,0 @@
-.cache
-./spotify_extractor/__pycache__
-.etl/spotify_extractor/.env

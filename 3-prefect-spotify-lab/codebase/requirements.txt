@@ -1,4 +1,0 @@
-spotipy
-python-dotenv
-pandas
-pytest
